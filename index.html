@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dev Community Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">Help Us Build a Better Dev Community</h1>
+        <p id="description">This won't take more than 2 minutes — promise! 🚀</p>
+        <form id="survey-form">
+            <div id="confirmation-message" style="display:none; text-align:center; margin-top:20px; color:#1A1A1A; font-size:1.2em; font-weight: bold;">
+                Thank you for your response! You're awesome. 💜
+            </div>
+            
+            <label id="name-label">
+                Name
+                <input type="text" id="name" name="name" placeholder="Let us know how to call you :D" required>
+            </label>
+            <label id="email-label">
+                Email
+                <input type="email" id="email" name="email" placeholder="Your email (only if you want updates)" required>
+            </label>
+            <label id="number-label">
+                Number 
+                <input type="number" id="number" name="number" placeholder="Totally optional — no spam, ever.">
+            </label>
+            <label for="dropdown">Which area are you interested in?</label>
+            <select name="dev-path" id="dropdown">
+                <option value="">Pick your dev path</option>
+                <option value="frontend">Front-end 🎨</option>
+                <option value="backend">Back-end 🛠️</option>
+                <option value="fullstack">Full Stack ⚡</option>
+                <option value="mobile">Mobile 📱</option>
+                <option value="datascience">Data Science 📊</option>
+                <option value="game">Game Dev 🎮</option>
+                <option value="exploring">Still figuring it out 🔍</option>
+            </select>
+            <fieldset>
+                <legend>What’s your dev level?</legend>
+            
+                <input type="radio" id="newbie" name="level" value="newbie">
+                <label for="newbie">Newbie 👶 (just starting)</label><br>
+            
+                <input type="radio" id="junior" name="level" value="junior">
+                <label for="junior">Junior 🚀 (got some skills)</label><br>
+            
+                <input type="radio" id="mid" name="level" value="mid">
+                <label for="mid">Mid ⚙️ (comfortable coding)</label><br>
+            
+                <input type="radio" id="senior" name="level" value="senior">
+                <label for="senior">Senior 🧙 (sharing wisdom)</label><br>
+            </fieldset>
+            <label for="communityNeeds" id="message-label-2">What do you want more of in this community?</label>
+            <select id="communityNeeds" name="communityNeeds">
+                <option value="">Choose one</option>
+                <option value="events">Online meetups & events 📅</option>
+                <option value="resources">Learning resources 📚</option>
+                <option value="collabs">Collab projects 💻</option>
+                <option value="jobBoard">Job & freelance board 💼</option>
+                <option value="mentorship">Mentorship opportunities 💡</option>
+                <option value="memes">More dev memes, obviously 😅</option>
+            </select>
+            <fieldset>
+                <legend id="tools-techs">What tools or techs do you use (or wanna learn)?</legend>
+            
+                <input type="checkbox" id="html" name="techs" value="HTML">
+                <label for="html">HTML & CSS 🧱</label><br>
+            
+                <input type="checkbox" id="js" name="techs" value="JavaScript">
+                <label for="js">JavaScript ⚡</label><br>
+            
+                <input type="checkbox" id="react" name="techs" value="React">
+                <label for="react">React ⚛️</label><br>
+            
+                <input type="checkbox" id="node" name="techs" value="Node.js">
+                <label for="node">Node.js 🌿</label><br>
+            
+                <input type="checkbox" id="python" name="techs" value="Python">
+                <label for="python">Python 🐍</label><br>
+            
+                <input type="checkbox" id="sql" name="techs" value="SQL">
+                <label for="sql">SQL 🗄️</label><br>
+            
+                <input type="checkbox" id="other" name="techs" value="Other">
+                <label for="other">Other 🧠</label><br>
+            </fieldset>
+            <label id="message-label" for="message">Got feedback, ideas or feature requests? Let us know!</label><br>
+            <textarea id="message" name="message" rows="5" placeholder="Drop your thoughts, suggestions, or just say hi 👋"></textarea>
+            <input type="submit" value="Submit & Code On 💻">
+        </form>
+        <script>
+            const form = document.getElementById("survey-form");
+            const message = document.getElementById("confirmation-message");
+        
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+            
+                message.style.display = "block";
+            
+                form.reset();
+            
+                setTimeout(() => {
+                    message.style.display = "none";
+                }, 5000); 
+            });
+        </script>
+        
+    </body>
+</html>

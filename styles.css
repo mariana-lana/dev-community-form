@@ -1,0 +1,135 @@
+@media (max-width: 600px) {
+    form {
+    padding: 15px;
+}
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 100%;
+    }
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #4B0082;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+p {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+    margin-top: -15px;
+}
+
+form {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #1A1A1A;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #4B0082;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #4B0082;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+input[type="submit"]:hover {
+    background-color: #3a0066;
+}
+
+input[type="submit"]:active {
+    background-color: #2a0044;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+textarea {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+textarea:focus {
+    border-color: #4B0082;
+    outline: none;
+}
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+#message-label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: -15px;
+    font-weight: bold;
+    color: #1A1A1A;
+}
+
+#tools-techs {
+    font-weight: bold;
+    color: #1A1A1A;
+    margin-top: 10px;
+}
+
+#message-label-2 {
+    margin-top: 10px;
+}
+
+input[type="checkbox"]:hover + label,
+input[type="radio"]:hover + label {
+    background-color: #f0e6ff;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
